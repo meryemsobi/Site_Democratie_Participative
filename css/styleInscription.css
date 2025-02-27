@@ -1,0 +1,136 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF; /* Blanc pur */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Section du logo */
+.logo-section {
+    text-align: center;
+    flex: 1;
+}
+
+.logo {
+    width: 250px; /* Taille par défaut pour écrans moyens */
+    height: auto;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #6B8E23; /* Vert olive */
+    margin-top: 10px;
+}
+
+/* Section du formulaire */
+.form-section {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.signup-button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #D1EEB4; /* Vert pastel */
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid #A3C09A; /* Bordure légèrement plus sombre */
+    transition: all 0.3s ease;
+}
+
+/* Formulaire */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F7F7F7;
+}
+
+.submit-button {
+    background-color: #D1EEB4;
+    color: #333333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #A3C09A;
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+
+/* Petits écrans (mobiles) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-section {
+        align-items: center;
+        width: 100%;
+    }
+
+    .signup-form {
+        width: 100%;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+/* Grands écrans (ordinateurs) */
+@media (min-width: 1200px) {
+    .logo {
+        width: 300px;
+    }
+
+    .signup-form input {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+

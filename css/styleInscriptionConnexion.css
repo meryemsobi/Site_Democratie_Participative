@@ -1,0 +1,80 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF; /* Blanc pur */
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Section du logo */
+.logo {
+    width: 200px; /* Taille par défaut */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les boutons */
+}
+
+.action-button {
+    display: inline-block;
+    background-color: #D1EEB4; /* Vert pastel principal */
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #A3C09A; /* Bordure légèrement plus sombre */
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #A3C09A; /* Vert plus sombre au survol */
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+
+/* Petits écrans (mobiles) */
+@media (max-width: 600px) {
+    .logo {
+        width: 150px; /* Réduction du logo */
+    }
+
+    .action-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Grands écrans (tablettes et ordinateurs de bureau) */
+@media (min-width: 1200px) {
+    .logo {
+        width: 300px; /* Agrandissement du logo */
+    }
+
+    .action-button {
+        font-size: 18px;
+        padding: 12px 40px;
+    }
+}
+
+

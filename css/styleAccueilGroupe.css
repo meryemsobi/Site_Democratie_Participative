@@ -1,0 +1,186 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cbf1da;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Troisième colonne pour "Créer un groupe" */
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Logo */
+.logo-container {
+    grid-column: 1 / span 1; /* Première colonne (gauche) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Notifications */
+.notification-container {
+    grid-column: 1 / span 1; /* Colonne gauche (notifications) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.notification-container a:hover {
+    text-decoration: underline;
+}
+
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Groupes */
+.group-container {
+    grid-column: 2 / span 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-container h2 {
+    margin-bottom: 20px;
+}
+
+.group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.group-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.group-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.group-card .btn-details {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.group-card .btn-details:hover {
+    background-color: #0056b3;
+}
+
+/* Compte */
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.account-container a:hover {
+    text-decoration: underline;
+}
+
+/* Créer un groupe - En haut à droite, sur la même ligne que le logo */
+.create-group-container {
+    grid-column: 3 / span 1; /* Troisième colonne (droite) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-group-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.create-group-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.create-group-container a:hover {
+    text-decoration: underline;
+}

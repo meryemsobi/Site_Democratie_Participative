@@ -1,0 +1,127 @@
+/* Général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cbf1da; /* Fond vert pastel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombrage subtil */
+    margin: 20px;
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: #333; /* Gris foncé */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333; /* Gris foncé */
+}
+
+/* Zone de texte et inputs */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #f9f9f9; /* Fond gris clair */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF; /* Bleu lors du focus */
+    outline: none;
+}
+
+/* Ajustement de la zone de texte */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Bouton */
+button {
+    background-color: #007BFF; /* Bleu */
+    color: #fff; /* Blanc */
+    font-size: 1.1em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+button:hover {
+    background-color: #0056b3; /* Bleu plus foncé */
+    transform: scale(1.02); /* Légère augmentation de la taille */
+}
+
+button:active {
+    transform: scale(0.98); /* Réduction temporaire à l'activation */
+}
+
+/* Feedback utilisateur (success/error) */
+.feedback {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback.success {
+    color: #28a745; /* Vert pour succès */
+}
+
+.feedback.error {
+    color: #dc3545; /* Rouge pour erreur */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
