@@ -64,5 +64,5 @@ Pour cette raison, une démonstration vidéo complète du projet a été réalis
 
 👤 **Auteur** : [Meryem Sobi]  
 👤 **Ma binome** : [Sanaâ Moussa]  
-📧 **Email** : [spbimeryem@hotmail.com]  
+📧 **Email** : [sobimeryem@hotmail.com]  
 
