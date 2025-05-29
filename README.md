@@ -62,7 +62,7 @@ Pour cette raison, une démonstration vidéo complète du projet a été réalis
 
 ## 📬 Contact
 
-👤 **Auteur** : [Ton nom ici]  
-📧 **Email** : [Ton email ici]  
-🌐 **Portfolio** : [Lien vers ton site/portfolio]
+👤 **Auteur** : [Meryem Sobi]  
+👤 **Ma binome** : [Sanaâ Moussa]  
+📧 **Email** : [spbimeryem@hotmail.com]  
 
